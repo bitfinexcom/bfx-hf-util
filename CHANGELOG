@@ -1,0 +1,17 @@
+# 1.0.4
+- docs: create/update
+
+# 1.0.3
+- add missing debug dep
+- minor refactoring
+
+# 1.0.2
+- added LICENSE
+- onExit: reduce grace period to 3d
+
+# 1.0.1
+- removed package-lock.json
+- removed babel dep
+
+# 1.0.0
+- initial release

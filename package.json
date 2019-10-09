@@ -1,6 +1,6 @@
 {
   "name": "bfx-hf-util",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "HF utilities",
   "main": "./dist/index.js",
   "directories": {
@@ -11,7 +11,9 @@
   "scripts": {
     "build": "babel -q ./index.js -d ./dist && babel -q ./lib -d ./dist/lib && copy package.json dist",
     "test": "NODE_ENV=test BABEL_ENV=test node_modules/tape-watch/bin/tape-watch -r babel-register ./test/*.spec.js | faucet",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "api_docs": "node_modules/jsdoc-to-markdown/bin/cli.js lib/*.js lib/candles/*.js > docs/api.md",
+    "docs": "npm run api_docs"
   },
   "repository": {
     "type": "git",
@@ -52,6 +54,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.0.1",
     "faucet": "^0.0.1",
+    "jsdoc-to-markdown": "^5.0.1",
     "tape": "^4.6.3",
     "tape-watch": "^2.3.0",
     "yargs": "6.6.0"
