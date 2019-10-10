@@ -41,7 +41,7 @@ processCandles.forEach(candle => console.log(JSON.stringify(candle)))
 
 ### Docs
 
-For JSDoc-generated API documentation, refer to `docs/api.md`
+For JSDoc-generated API documentation, [refer to `docs/api.md`](/docs/api.md)
 
 ### Contributing
 
