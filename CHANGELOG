@@ -7,7 +7,7 @@
 
 # 1.0.2
 - added LICENSE
-- onExit: reduce grace period to 3d
+- onExit: reduce grace period to 3s
 
 # 1.0.1
 - removed package-lock.json
@@ -15,3 +15,4 @@
 
 # 1.0.0
 - initial release
+
