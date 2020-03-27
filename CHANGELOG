@@ -1,3 +1,6 @@
+# 1.0.7
+- refactor: register on-exit listeners only if method is used
+
 # 1.0.6
 - feature: add CURRENCIES and WALLET_TYPES datasets
 - refactor: improve verbosity of catch-uncaught handler
