@@ -1,3 +1,6 @@
+# 1.0.8
+- fix: add missing bluebird dep to manifest
+
 # 1.0.7
 - refactor: register on-exit listeners only if method is used
 
