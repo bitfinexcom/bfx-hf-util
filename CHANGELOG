@@ -1,3 +1,6 @@
+# 1.0.9
+- feature: allow catchUncaughtError logger override
+
 # 1.0.8
 - fix: add missing bluebird dep to manifest
 
