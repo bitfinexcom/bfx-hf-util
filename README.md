@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/bitfinexcom/bfx-hf-util.svg?branch=master)](https://travis-ci.org/bitfinexcom/bfx-hf-util)
 
-This library hosts a set of utility functions used throughout the Bitfinex Honey Framework & API Libraries.
+This library hosts a set of utility functions used throughout the Bitfinex
+Honey Framework & API Libraries.
 
 ### Features
 
@@ -41,7 +42,8 @@ processCandles.forEach(candle => console.log(JSON.stringify(candle)))
 
 ### Docs
 
-For JSDoc-generated API documentation, [refer to `docs/api.md`](/docs/api.md)
+API documentation can be found in [`docs/reference.md`](docs/reference.md), and
+examples in the [`examples`](examples) folder.
 
 ### Contributing
 
