@@ -10,7 +10,6 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "babel ./index.js -d ./dist && babel ./lib -d ./dist/lib && copy package.json dist",
-    "test": "NODE_ENV=test BABEL_ENV=test node_modules/tape-watch/bin/tape-watch -r babel-register ./test/*.spec.js | faucet",
     "postinstall": "npm run build",
     "api_docs": "node_modules/jsdoc-to-markdown/bin/cli.js lib/*.js lib/candles/*.js > docs/api.md",
     "docs": "npm run api_docs"
@@ -29,33 +28,13 @@
     "BTC"
   ],
   "dependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "@babel/plugin-transform-regenerator": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-es2015": "^7.0.0-beta.53",
-    "@babel/preset-stage-0": "^7.0.0",
-    "babel-eslint": "^7.2.2",
     "bluebird": "^3.7.2",
-    "copy": "^0.3.1",
-    "create-index": "^2.3.0",
     "debug": "^4.1.1",
     "lodash": "^4.17.10",
     "stackman": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-standard": "^7.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^2.0.1",
-    "faucet": "^0.0.1",
-    "jsdoc-to-markdown": "^5.0.1",
-    "tape": "^4.6.3",
-    "tape-watch": "^2.3.0",
-    "yargs": "6.6.0"
+    "jsdoc-to-markdown": "^5.0.1"
   }
 }
