@@ -1,8 +1,8 @@
 {
   "name": "bfx-hf-util",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "HF utilities",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
