@@ -1,5 +1,8 @@
+# 1.0.11
+- remove post-install scripts
+
 # 1.0.10
-- removed use of babel
+- remove use of babel
 
 # 1.0.9
 - feature: allow catchUncaughtError logger override
