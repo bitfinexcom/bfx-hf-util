@@ -41,17 +41,12 @@ const processedCandles = preprocessRemoteCandles('1m', candles)
 processCandles.forEach(candle => console.log(JSON.stringify(candle)))
 ```
 
-### Docs
-
-For JSDoc-generated API documentation, [refer to `docs/api.md`](/docs/api.md)
-
 ### Development
 
 | Command | What it does |
 | --- | --- |
 | `npm test` | Lint + unit tests |
 | `npm run lint` / `npm run lint:fix` | Check / fix code style |
-| `npm run docs` | Regenerate `docs/api.md` |
 
 ### Contributing
 
