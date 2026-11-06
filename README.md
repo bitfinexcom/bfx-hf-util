@@ -7,7 +7,7 @@ This library hosts a set of utility functions used throughout the Bitfinex Honey
 ### Features
 
 * Logic for processing Bitfinex candle data
-* Helper for catching uncaught errors (`require('bfx-hf-util/lib/catch_uncaught_errors')`)
+* Helper for catching uncaught errors (`require('@bitfinex/bfx-hf-util/lib/catch_uncaught_errors')`)
 
 ### Installation
 
@@ -20,7 +20,7 @@ npm i --save-prod https://github.com/bitfinexcom/bfx-hf-util.git#v2.0.0
 ### Quickstart
 
 ```js
-const { preprocessRemoteCandles } = require('bfx-hf-util')
+const { preprocessRemoteCandles } = require('@bitfinex/bfx-hf-util')
 const { RESTv2 } = require('bfx-api-node-rest')
 
 const rest = new RESTv2()
@@ -62,7 +62,7 @@ This package will be maintained only via github, please use latest relases from 
 
 Example on how to install specific version from github:
 ```
-npm i bfx-hf-util
+npm i @bitfinex/bfx-hf-util
 ```
 
 Example on how to install it latest version from github:
