@@ -1,5 +1,5 @@
 {
-  "name": "bfx-hf-util",
+  "name": "@bitfinex/bfx-hf-util",
   "version": "2.0.0",
   "description": "HF utilities",
   "main": "index.js",
