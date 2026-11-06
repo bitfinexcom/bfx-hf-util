@@ -67,7 +67,7 @@ This package will be maintained only via github, please use latest relases from 
 
 Example on how to install specific version from github:
 ```
-npm i --save-prod https://github.com/bitfinexcom/bfx-hf-util.git#v2.0.0
+npm i @bitfinex/bfx-hf-util
 ```
 
 Example on how to install it latest version from github:
