@@ -1,6 +1,6 @@
 {
-  "name": "bfx-hf-util",
-  "version": "1.0.12",
+  "name": "@bitfinex/bfx-hf-util",
+  "version": "2.0.0",
   "description": "HF utilities",
   "main": "index.js",
   "directories": {
@@ -8,9 +8,16 @@
   },
   "author": "Cris Mihalache <cris.m@bitfinex.com> (https://www.bitfinex.com)",
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22.0"
+  },
   "scripts": {
-    "api_docs": "node_modules/jsdoc-to-markdown/bin/cli.js lib/*.js lib/candles/*.js > docs/api.md",
-    "docs": "npm run api_docs"
+    "api_docs": "jsdoc2md lib/*.js lib/candles/*.js > docs/api.md",
+    "docs": "npm run api_docs",
+    "lint": "bfx-lint-js",
+    "lint:fix": "bfx-lint-js --fix",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "brittle-node test/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -26,13 +33,12 @@
     "BTC"
   ],
   "dependencies": {
-    "bluebird": "^3.7.2",
-    "debug": "^4.1.1",
-    "lodash": "^4.17.10",
-    "stackman": "^4.0.0"
+    "debug": "^4.4.3",
+    "stackman": "^4.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "jsdoc-to-markdown": "^5.0.1"
+    "@bitfinex/lint-js": "^1.1.0",
+    "brittle": "^4.5.0",
+    "jsdoc-to-markdown": "^9.1.3"
   }
 }

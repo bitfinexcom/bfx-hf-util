@@ -7,18 +7,20 @@ This library hosts a set of utility functions used throughout the Bitfinex Honey
 ### Features
 
 * Logic for processing Bitfinex candle data
-* Helper for catching uncaught errors (`require('bfx-hf-util/lib/catch_uncaught_errors)`)
+* Helper for catching uncaught errors (`require('@bitfinex/bfx-hf-util/lib/catch_uncaught_errors')`)
 
 ### Installation
 
+Requires Node.js 22 or newer.
+
 ```bash
-npm i --save bfx-hf-util
+npm i --save-prod https://github.com/bitfinexcom/bfx-hf-util.git#v2.0.0
 ```
 
 ### Quickstart
 
 ```js
-const { preprocessRemoteCandles } = require('bfx-hf-util')
+const { preprocessRemoteCandles } = require('@bitfinex/bfx-hf-util')
 const { RESTv2 } = require('bfx-api-node-rest')
 
 const rest = new RESTv2()
@@ -43,6 +45,14 @@ processCandles.forEach(candle => console.log(JSON.stringify(candle)))
 
 For JSDoc-generated API documentation, [refer to `docs/api.md`](/docs/api.md)
 
+### Development
+
+| Command | What it does |
+| --- | --- |
+| `npm test` | Lint + unit tests |
+| `npm run lint` / `npm run lint:fix` | Check / fix code style |
+| `npm run docs` | Regenerate `docs/api.md` |
+
 ### Contributing
 
 1. Fork it
@@ -57,7 +67,7 @@ This package will be maintained only via github, please use latest relases from 
 
 Example on how to install specific version from github:
 ```
-npm i --save-prod https://github.com/bitfinexcom/bfx-hf-util.git#v1.0.11
+npm i --save-prod https://github.com/bitfinexcom/bfx-hf-util.git#v2.0.0
 ```
 
 Example on how to install it latest version from github:
