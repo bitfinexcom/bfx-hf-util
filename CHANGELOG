@@ -1,5 +1,4 @@
 # 2.0.0
-- breaking: rename package to @bitfinex/bfx-hf-util
 - breaking: require Node.js >= 22
 - meta: commit package-lock.json, add .npmrc (ignore-scripts)
 - meta: update dependencies, drop lodash and bluebird for native code, fix all npm audit alerts
@@ -47,4 +46,3 @@
 
 # 1.0.0
 - initial release
-
