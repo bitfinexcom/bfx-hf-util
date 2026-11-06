@@ -5,6 +5,7 @@
 - meta: update dependencies, drop lodash and bluebird for native code, fix all npm audit alerts
 - meta: replace eslint with @bitfinex/lint-js, add brittle unit tests
 - meta: drop jsdoc-to-markdown and the generated docs/api.md
+- meta: pin debug and stackman to exact versions (stackman is unmaintained since 2020)
 
 # 1.0.11
 - remove post-install scripts
